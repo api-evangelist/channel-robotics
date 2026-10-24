@@ -1,0 +1,16 @@
+generated: '2026-10-24'
+method: none
+source:
+- https://zapier.com/apps/channel-robotics/integrations
+- https://n8n.io/integrations/channel-robotics/
+- https://composio.dev/toolkits/channel-robotics
+- https://monid.ai/tools/channel-robotics
+checked:
+- https://composio.dev/toolkits/channel-robotics
+- https://monid.ai/tools/channel-robotics
+- https://n8n.io/integrations/channel-robotics/
+- https://zapier.com/apps/channel-robotics/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

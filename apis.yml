@@ -1,25 +1,74 @@
 aid: channel-robotics
+
 name: Channel Robotics
-description: 'Channel Robotics is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by true-ventures) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Channel Robotics builds advanced robotic automation solutions for industrial and logistics environments. Leveraging AI-driven perception and modular hardware, they enable flexible, scalable automation that integrates with existing workflows. Their platform offers remote monitoring, real-time analytics, and easy-to-deploy robot cells, helping manufacturers increase efficiency, reduce downtime, and accelerate digital transformation. Backed by True Ventures, they serve enterprises seeking cutting-edge automation technology.'
+
 url: https://raw.githubusercontent.com/api-evangelist/channel-robotics/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
 - Company
-apis: []
+- Robotics
+- Automation
+- AI
+- Industrial
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- true-ventures
+
+image: https://static.wixstatic.com/media/2075ef_9fff35569fd14bbeaca435959d9873f4~mv2.png/v1/fill/w_260,h_68,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Channel%20Robotics%20Logo%20Blue.png
+
 common:
+- type: LLMsTxt
+  url: llms/channel-robotics-llms.txt
+- type: Hosts
+  url: hosts/channel-robotics-hosts.yml
+- type: Vendors
+  url: vendors/channel-robotics-vendors.yml
+- type: DomainSecurity
+  url: security/channel-robotics-domain-security.yml
 - type: Website
   url: https://channelrobotics.com
+
+apis: []
+
+x-backed-by:
+- true-ventures
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-24'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://channelrobotics.com/mcp
+    status: 403
+  - url: https://www.channelrobotics.com/mcp
+    status: 403
+  - url: https://channelrobotics.com
+    status: 200
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
